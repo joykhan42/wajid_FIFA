@@ -3,75 +3,101 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Wajid FIFA Live</title>
+<title> WAJID FIFA Football Live</title>
 
 <style>
 body{
-margin:0;
-font-family:Arial,sans-serif;
-background:#0b1220;
-color:white;
-text-align:center;
+    margin:0;
+    background:#0f172a;
+    color:white;
+    font-family:Arial,sans-serif;
 }
 
 header{
-background:#00b894;
-padding:20px;
-font-size:28px;
-font-weight:bold;
+    background:#16a34a;
+    padding:18px;
+    text-align:center;
+    font-size:28px;
+    font-weight:bold;
 }
 
 .container{
-padding:20px;
+    width:95%;
+    max-width:1000px;
+    margin:auto;
+    padding:20px;
 }
 
-.video{
-width:100%;
-max-width:900px;
-height:500px;
-border:none;
-border-radius:10px;
-background:black;
+.video-box{
+    background:#000;
+    border-radius:12px;
+    overflow:hidden;
 }
 
-.button{
-display:inline-block;
-margin-top:20px;
-padding:12px 25px;
-background:#00b894;
-color:white;
-text-decoration:none;
-border-radius:8px;
-font-size:18px;
+video{
+    width:100%;
+    height:auto;
+}
+
+h2{
+    margin-top:25px;
+}
+
+.card{
+    background:#1e293b;
+    padding:15px;
+    border-radius:10px;
+    margin-top:15px;
 }
 </style>
+
+<script src="https://cdn.jsdelivr.net/npm/hls.js@latest"></script>
 
 </head>
 
 <body>
 
 <header>
-⚽ WAJID FIFA LIVE ⚽
+⚽ WAJID FIFA FOOTBALL LIVE ⚽
 </header>
 
 <div class="container">
 
-<h2>Welcome</h2>
+<div class="video-box">
+<video id="video" controls autoplay></video>
+</div>
 
-<p>My Private Football Website</p>
+<h2>Today's Matches</h2>
 
-<iframe class="video"
-src=""
-allowfullscreen>
-</iframe>
+<div class="card">
+Liverpool vs Chelsea
+</div>
 
-<br>
+<div class="card">
+Barcelona vs Real Madrid
+</div>
 
-<a class="button" href="#">
-Live Match
-</a>
+<div class="card">
+PSG vs Bayern Munich
+</div>
 
 </div>
+
+<script>
+
+const video=document.getElementById('video');
+
+const videoSrc="http://go8knm.optikl.ink/X/index.php/Besyria3/video.m3u8";
+
+if(Hls.isSupported()){
+    const hls=new Hls();
+    hls.loadSource(videoSrc);
+    hls.attachMedia(video);
+}else if(video.canPlayType('application/vnd.apple.mpegurl')){
+    video.src=videoSrc;
+}
+
+</script>
 
 </body>
 </html>
