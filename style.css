@@ -94,16 +94,9 @@ border:1px solid rgba(255,255,255,.08);
 height:70vh;
 
 background:
+linear-gradient(rgba(0,0,0,.45),rgba(0,0,0,.85)),
+url("banner.jpg");
 
-linear-gradient(
-
-rgba(0,0,0,.45),
-
-rgba(0,0,0,.85)
-
-),
-
-url("https://ibb.co/wFQjMgJb");
 
 background-size:cover;
 
