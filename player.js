@@ -3,9 +3,9 @@
 // =======================================
 
 const SERVER_1 = "https://1nyaler.streamhostingcdn.top/stream/32/index.m3u8";
-const SERVER_2 = "http://go8knm.optikl.ink/X/index.php/Besyria3/video.m3u8";
-const SERVER_3 = "http://rgkkw.live/live/1Aoen7elp5/IgMJ60tmAa/130714.ts";
-const SERVER_4 = "http://go8knm.optikl.ink/X/index.php/Besyria1/video.m3u8";
+const SERVER_2 = "https://1nyaler.streamhostingcdn.top/stream/23/index.m3u8";
+const SERVER_3 = "http://103.59.176.72:8083/live1/tracks-v1a1/mono.m3u8?token=123";
+const SERVER_4 = "http://go8knm.optikl.ink/X/index.php/Besyria3/video.m3u8";
 
 const video = document.getElementById("video");
 
