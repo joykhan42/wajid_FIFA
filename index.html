@@ -3,53 +3,10 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title> WAJID FIFA Football Live</title>
 
-<style>
-body{
-    margin:0;
-    background:#0f172a;
-    color:white;
-    font-family:Arial,sans-serif;
-}
+<title>WAJID FIFA</title>
 
-header{
-    background:#16a34a;
-    padding:18px;
-    text-align:center;
-    font-size:28px;
-    font-weight:bold;
-}
-
-.container{
-    width:95%;
-    max-width:1000px;
-    margin:auto;
-    padding:20px;
-}
-
-.video-box{
-    background:#000;
-    border-radius:12px;
-    overflow:hidden;
-}
-
-video{
-    width:100%;
-    height:auto;
-}
-
-h2{
-    margin-top:25px;
-}
-
-.card{
-    background:#1e293b;
-    padding:15px;
-    border-radius:10px;
-    margin-top:15px;
-}
-</style>
+<link rel="stylesheet" href="style.css">
 
 <script src="https://cdn.jsdelivr.net/npm/hls.js@latest"></script>
 
@@ -57,47 +14,65 @@ h2{
 
 <body>
 
-<header>
-⚽ WAJID FIFA FOOTBALL LIVE ⚽
-</header>
-
 <div class="container">
 
-<div class="video-box">
-<video id="video" controls autoplay></video>
+<div class="player-card">
+
+<div class="top-bar">
+
+<div class="live">
+🔴 LIVE
 </div>
 
-<h2>Today's Matches</h2>
-
-<div class="card">
-Liverpool vs Chelsea
-</div>
-
-<div class="card">
-Barcelona vs Real Madrid
-</div>
-
-<div class="card">
-PSG vs Bayern Munich
+<div class="viewers">
+👁 0
 </div>
 
 </div>
 
-<script>
+<video
+id="video"
+controls
+playsinline
+autoplay>
+</video>
 
-const video=document.getElementById('video');
+<div class="servers">
 
-const videoSrc="http://go8knm.optikl.ink/X/index.php/Besyria3/video.m3u8";
+<button onclick="loadServer(1)">
+Server 1
+</button>
 
-if(Hls.isSupported()){
-    const hls=new Hls();
-    hls.loadSource(videoSrc);
-    hls.attachMedia(video);
-}else if(video.canPlayType('application/vnd.apple.mpegurl')){
-    video.src=videoSrc;
-}
+<button onclick="loadServer(2)">
+Server 2
+</button>
 
-</script>
+<button onclick="loadServer(3)">
+Server 3
+</button>
+
+<button onclick="loadServer(4)">
+Server 4
+</button>
+
+</div>
+
+</div>
+
+<div class="info">
+
+<h2>⚽ WAJID FIFA</h2>
+
+<p>
+Private Football Streaming Dashboard
+</p>
+
+</div>
+
+</div>
+
+<script src="player.js"></script>
+<script src="script.js"></script>
 
 </body>
 </html>
