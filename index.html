@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
+
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
@@ -20,40 +22,68 @@
 ⚽ WAJID LIVE
 </div>
 
-<nav>
+<div class="viewer">
 
-<a href="#">Home</a>
+🔴 LIVE
 
-<a href="#">Live</a>
+<span id="viewerCount">
+2450
+</span>
 
-<a href="#">Matches</a>
-
-<a href="#">Contact</a>
-
-</nav>
+</div>
 
 </header>
 
 
 <section class="hero">
 
-<div class="hero-overlay">
+<div class="overlay">
 
-<h1>Watch Football Live</h1>
+<h1>Football Streaming</h1>
 
-<p> Streaming Dashboard</p>
+<p>
+Private Dashboard
+</p>
 
-<button id="watchBtn">
-<a class="telegram-btn"
+<a
 href="https://t.me/akm218"
-target="_blank">
+class="telegram">
 
 📩 যোগাযোগ করতে এখানে চাপ দিন
 
 </a>
-  
-▶ Watch Now
 
+</div>
+
+</section>
+
+
+<section class="playerBox">
+
+<video
+id="video"
+controls
+playsinline
+autoplay>
+
+</video>
+
+<div class="servers">
+
+<button onclick="loadServer(1)">
+Server 1
+</button>
+
+<button onclick="loadServer(2)">
+Server 2
+</button>
+
+<button onclick="loadServer(3)">
+Server 3
+</button>
+
+<button onclick="loadServer(4)">
+Server 4
 </button>
 
 </div>
@@ -61,49 +91,66 @@ target="_blank">
 </section>
 
 
-<section class="player-section">
+<section class="section">
 
-<div class="live-badge">
+<h2>
+Featured Leagues
+</h2>
 
-🔴 LIVE
+<div class="cards">
 
+<div class="card">
+FIFA
 </div>
 
-<video
-id="video"
-controls
-playsinline
-autoplay>
-</video>
+<div class="card">
+Premier League
+</div>
 
-<div class="servers">
+<div class="card">
+Champions League
+</div>
 
-<button onclick="loadServer(1)">Server 1</button>
-
-<button onclick="loadServer(2)">Server 2</button>
-
-<button onclick="loadServer(3)">Server 3</button>
-
-<button onclick="loadServer(4)">Server 4</button>
+<div class="card">
+La Liga
+</div>
 
 </div>
 
 </section>
 
 
-<section class="matches">
+<section class="section">
 
-<h2>Featured Matches</h2>
+<h2>
+Today's Matches
+</h2>
 
 <div class="cards">
 
-<div class="card">FIFA</div>
+<div class="card">
 
-<div class="card">Premier League</div>
+Match 1
 
-<div class="card">Champions League</div>
+</div>
 
-<div class="card">La Liga</div>
+<div class="card">
+
+Match 2
+
+</div>
+
+<div class="card">
+
+Match 3
+
+</div>
+
+<div class="card">
+
+Match 4
+
+</div>
 
 </div>
 
@@ -112,18 +159,14 @@ autoplay>
 
 <footer>
 
-<p>
-
 © 2026 WAJID LIVE
 
-</p>
-
 </footer>
-
 
 <script src="player.js"></script>
 
 <script src="script.js"></script>
 
 </body>
+
 </html>
