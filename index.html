@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>WAJID FIFA</title>
+<title>WAJID LIVE</title>
 
 <link rel="stylesheet" href="style.css">
 
@@ -14,19 +14,51 @@
 
 <body>
 
-<div class="container">
+<header class="header">
 
-<div class="player-card">
+<div class="logo">
+⚽ WAJID LIVE
+</div>
 
-<div class="top-bar">
+<nav>
 
-<div class="live">
+<a href="#">Home</a>
+
+<a href="#">Live</a>
+
+<a href="#">Matches</a>
+
+<a href="#">Contact</a>
+
+</nav>
+
+</header>
+
+
+<section class="hero">
+
+<div class="hero-overlay">
+
+<h1>Watch Football Live</h1>
+
+<p>Your Private Streaming Dashboard</p>
+
+<button id="watchBtn">
+
+▶ Watch Now
+
+</button>
+
+</div>
+
+</section>
+
+
+<section class="player-section">
+
+<div class="live-badge">
+
 🔴 LIVE
-</div>
-
-<div class="viewers">
-👁 0
-</div>
 
 </div>
 
@@ -39,39 +71,51 @@ autoplay>
 
 <div class="servers">
 
-<button onclick="loadServer(1)">
-Server 1
-</button>
+<button onclick="loadServer(1)">Server 1</button>
 
-<button onclick="loadServer(2)">
-Server 2
-</button>
+<button onclick="loadServer(2)">Server 2</button>
 
-<button onclick="loadServer(3)">
-Server 3
-</button>
+<button onclick="loadServer(3)">Server 3</button>
 
-<button onclick="loadServer(4)">
-Server 4
-</button>
+<button onclick="loadServer(4)">Server 4</button>
 
 </div>
 
+</section>
+
+
+<section class="matches">
+
+<h2>Featured Matches</h2>
+
+<div class="cards">
+
+<div class="card">FIFA</div>
+
+<div class="card">Premier League</div>
+
+<div class="card">Champions League</div>
+
+<div class="card">La Liga</div>
+
 </div>
 
-<div class="info">
+</section>
 
-<h2>⚽ WAJID FIFA</h2>
+
+<footer>
 
 <p>
-Private Football Streaming Dashboard
+
+© 2026 WAJID LIVE
+
 </p>
 
-</div>
+</footer>
 
-</div>
 
 <script src="player.js"></script>
+
 <script src="script.js"></script>
 
 </body>
