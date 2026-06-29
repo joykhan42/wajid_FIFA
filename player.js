@@ -4,7 +4,7 @@
 
 const SERVER_1 = "https://1nyaler.streamhostingcdn.top/stream/23/index.m3u8";
 const SERVER_2 = "https://1nyaler.streamhostingcdn.top/stream/23/index.m3u8";
-const SERVER_3 = "https://ibb.co/cjrfg58";
+const SERVER_3 = "https://1nyaler.streamhostingcdn.top/stream/26/index.m3u8";
 const SERVER_4 = "https://ibb.co/wFQjMgJb";
 
 const video = document.getElementById("video");
